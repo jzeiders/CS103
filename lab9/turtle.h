@@ -1,22 +1,21 @@
-#indef Turtle_H
+#include "draw.h"
+
 #define Turtle_H
 
 class Turtle {
-  struct Color {
-    int red;
-    int green;
-    int blue
-  }
+  
 private:
+  Color color;
   double x;
   double y;
   double dir;
   bool isOn;
-  Color curColor;
 public:
   Turtle(double x0, double y0, double dir0);
   void move(double dist);
   void turn(double angle);
+  void setColor(Color newColor);
+  void off();
+  void on();
 };
 
-#endif
