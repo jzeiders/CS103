@@ -14,10 +14,10 @@ CXX = g++
 MOCQT4 = moc-qt4
 # tries later to check if it's the course VM, and changes CXX to 'compile'
 
-all: draw.o turtle.o threestep shape vanish x
+all: draw.o turtle.o threestep shape vanish x art
 
 clean:
-	rm -f draw.o turtle.o threestep shape vanish x
+	rm -f draw.o turtle.o threestep shape vanish x art
 
 fresh: clean all
 
